@@ -1,212 +1,205 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-            * {
-                margin: 0;
-                padding: 0;
-                border: 0;
-            }
-            body{
-                background: #bfbfbf;
-                font-family: Roboto;
-            }
+* {
+margin: 0;
+padding: 0;
+border: 0;
+}
 
-            header  {
-                text-align: center;
-                padding:30px;
-                background: #6B4EBC;
-                border-bottom: 1px;
-            }
-        
-            header div a{
-                margin: 0 30px; 
-                text-decoration: none;
-                font-size: 24px;
-                color: #000;
-                font-family: 'Roboto';
-            }
+body{
+    background: #bfbfbf;
+    font-family: 'Roboto';
+}
 
-            header div a:hover {
-                color:white;
-                transition: color 200ms;
-            }    
+header  {
+    text-align: center;
+    padding:30px;
+    background: #6B4EBC;
+    border-bottom: 1px;
+}
 
-            .wrapper{
-                text-align: center;
-            }
+header div a{
+    margin: 0 30px; 
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
+    font-family: 'Roboto';
+}
 
-            .wrapper img {
-                padding-top: 40px;
-                max-width: 300px;
-                height: 300px;
-                margin-bottom: 32px;
-                border-radius: 50%;
-            }
+header div a:hover {
+    color:white;
+    transition: color 200ms;
+}    
 
-            ;.wrapper h1{
-                font-weight: bold;
-            }
+.wrapper{
+    text-align: center;
+}
 
-            .wrapper p{
-                padding-top: 32px;
-                max-width: 500px;
-                margin: 32px auto;
-                line-height: 34px;
-            }
+.wrapper img {
+    padding-top: 40px;
+    max-width: 300px;
+    height: 300px;
+    margin-bottom: 32px;
+    border-radius: 50%;
+}
 
-            footer {
-                bottom: 0;
-                position: fixed;
-                width: 100%;
-                text-align: center;
-                padding:30px;
-                background: #6B4EBC;
-                border-bottom: 1px;
-            }
-            
-            footer div a {
-            margin: 0 30px; 
-            text-decoration: none;
-            font-size: 24px;
-            color: #000;
-            font-family: 'Roboto';
-          
-            }
+;.wrapper h1{
+    font-weight: bold;
+}
 
-        footer div a:hover {
-            color:white;
-            transition: color 200ms;
-                
-        }
-        
-        
-        .title {
-            text-align: center;
-            padding: 32px;
-            margin-left: 70px ;
-        }
+.wrapper p{
+    padding-top: 32px;
+    max-width: 500px;
+    margin: 32px auto;
+    line-height: 34px;
+}
 
-        .cards {
-            width: 800px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 40px;
-            padding-top:100px;
-        }
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding:30px;
+    background: #6B4EBC;
+    border-bottom: 1px;
+}
 
-        .card {
-            width: 250px;
-            height: 200px;
-            position: relative;
-            margin: 0 auto;
-            padding-top: 100px;
-        }
+footer div a {
+    margin: 0 30px; 
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
+    font-family: 'Roboto';
 
-        .curse_content, .curse_price {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            text-align:center ;
-        }
+}
 
-        .curse_price.free {
-            background-color:  #b3ffb3;
-            width: 80%;
-            border-radius: 50px;
-            padding: 3px 3px;              
-        }
-        .curse_price.paid{
-            background-color:   #ff6666;
-            width: 80%;
-            border-radius: 50px;
-            padding: 3px 3px;     
-        }
+footer div a:hover {
+    color:white;
+    transition: color 200ms;
+}
 
-       .image-container {
-           text-align: center;
-           padding: 20px;
-       }
-            
-       #starter {
-        border: 2px solid #6B4EBC;
-        padding-bottom: 50px;
-       }
+.title {
+    text-align: center;
+    padding: 32px;
+    margin-left: 70px ;
+}
 
-       #launchbase {
-        border: 2px solid #FD951F ;
-        padding-bottom: 50px;
-        padding-right: 20px;
-       }
+.cards {
+    width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding-top:100px;
+}
 
-       #gostack {
-        border: 2px solid #04D361;
-        padding-bottom: 50px;
-       }
+.card {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 100px;
+}
 
-            
-       .card:hover{
-        box-shadow: 5px 5px 5px 5px #808080;
-        cursor: pointer;
-       }
+.curse_content, .curse_price {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align:center ;
+}
 
-       .modal-overlay{
-        background-color: rgba(0, 0, 0, 0.7);
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        opacity: 0;
-        visibility: hidden;
-    }
+.curse_price {
+    background-color:#6B4EBC;
+    width: 80%;
+    border-radius: 50px;
+    padding: 3px 3px;           
+    color: white;   
+}
 
-       .modal {
-        background-color: white;
-        width: 60%;
-        height: 60%;
-        margin: 15vh auto;
-        position: relative;
-    }
+.image-container {
+    text-align: center;
+    padding: 20px;
+}
 
-        .close-modal {
-            color: black;
-            position: absolute;
-            right: 8px;
-            top: 8px;
-            cursor: pointer;
-        }
+#starter {
+    border: 2px solid #6B4EBC;
+    padding-bottom: 50px;
+}
 
-        .maximize-modal { 
-            color: black;
-            position: absolute;
-            right: 30px;
-            top: 8px;
-            cursor: pointer;
-        }
+#launchbase {
+    border: 2px solid #FD951F ;
+    padding-bottom: 50px;
+    padding-right: 20px;
+}
 
-        .minimize-modal {
-            color: black;
-            position: absolute;
-            right: 52px;
-            top: 7px;
-            cursor: pointer;
-        }
-    
-        .modal-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
+#gostack {
+    border: 2px solid #04D361;
+    padding-bottom: 50px;
+}
 
-        iframe {
-            top: 30px;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-        }
 
-        .maximize {
-            background-color: white;
-            width: 100%;
-            height: 100%;
-            margin: 0 auto;
-            position: relative;
-        }
+.card:hover{
+    box-shadow: 5px 5px 5px 5px #808080;
+    cursor: pointer;
+}
 
-        
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 60%;
+    height: 60%;
+    margin: 15vh auto;
+    position: relative;
+}
+
+.close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.maximize-modal { 
+    color: black;
+    position: absolute;
+    right: 30px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.minimize-modal {
+    color: black;
+    position: absolute;
+    right: 52px;
+    top: 7px;
+    cursor: pointer;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    top: 30px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.maximize {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
