@@ -1,37 +1,25 @@
-<!DOCTYPE html>     
-<html>
+{% extends "layout.njk" %}
 
-    <head>
-        <title>
-           Mayk Brito          
-        </title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../public/styleex.css">    
-    </head>
-    <body>     
-        <header class="topbot">
+{% block head %}
 
-            <div class="links">
-                <a href ='about.html'> Sobre</a>
-                <a href='https://discordapp.com/invite/gCRAFhc'>Comunidade</a>
-                <a href= "mailto:oi@rocketseat.com.br">Email</a>
-                <a href='+5547992078767'>Telefone</a>
-                <a href='courses.html'>Conteúdos</a>
-            </div>        
-        </header>
+<title> Cursos Rocketseat </title>
+                      
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">     
+ <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+{% endblock %}
+
+{% block content %}
 
         <div class="title"> <h1>Cursos</h1> </div>
         
         <div class="cards">
-            
+         
             <div class="card" id="starter">
                 <div class="image-container">
                     <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/starter.svg" alt="starter">
                     <h3>Starter</h3>
                 </div>
-    
                 <div class="curse_content">
                     <p class="curse_modules">5 Modules</p>
                     <p class="curse_price free">Free</p>
@@ -43,7 +31,6 @@
                     <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/launchbase.svg" alt="launchbase">
                     <h3>Launchbase</h3>
                 </div>
-
                 <div class="curse_content">
                     <p class="curse_modules">8 Modules</p>
                     <p class="curse_price paid">Paid</p>
@@ -51,12 +38,10 @@
             </div>
                  
             <div class="card" id="gostack">
-
                 <div class="image-container">
                     <img src="https://storage.googleapis.com/golden-wind/bootcamp-launchbase/assets/gostack.svg" alt="gostack">
                     <h3>GoStack</h3>
                 </div>
-
                 <div class="curse_content">
                     <p>11 Modules</p>
                     <p class="curse_price paid">Paid</p>
@@ -89,6 +74,7 @@
             </div>
         </div>
 
-    <script src="../public/scripts.js"></script>  
-    </body>
-</html>
+    <script src="scripts.js"></script>  
+
+{% endblock %}
+
