@@ -1,0 +1,24 @@
+{
+  "name": "exercicio",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozzott/Launchbase-Challenge.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ozzott/Launchbase-Challenge/issues"
+  },
+  "homepage": "https://github.com/ozzott/Launchbase-Challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
